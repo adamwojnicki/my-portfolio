@@ -1,0 +1,22 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 18px;
+}
+
+section {
+  background: #cacaca;
+}
