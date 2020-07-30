@@ -1,24 +1,20 @@
 import React from "react";
 import "./App.scss";
 
+import Personal from "./components/Personal";
+import Skills from "./components/Skills";
+import Experiences from "./components/Experiences";
+import Projects from "./components/Projects";
+import Hobbies from "./components/Hobbies";
+
 export default () => {
   return (
     <div className="container">
-      <section className="content-section" id="personal">
-        personal
-      </section>
-      <section className="content-section" id="skills">
-        skills
-      </section>
-      <section className="content-section" id="experiences">
-        experiences
-      </section>
-      <section className="content-section" id="projects">
-        projects
-      </section>
-      <section className="content-section" id="hobbies">
-        hobbies
-      </section>
+      <Personal />
+      <Skills />
+      <Experiences />
+      <Projects />
+      <Hobbies />
     </div>
   );
 };
