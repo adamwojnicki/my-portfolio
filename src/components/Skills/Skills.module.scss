@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+.skills {
+  &__element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__name {
+    font-size: 1.6rem;
+  }
+  &__progress {
+    background: $light-grey2;
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+    height: 8px;
+  }
+  &__fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: $orange;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+}
