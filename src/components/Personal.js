@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Personal.module.scss";
+
 import portrait from "../images/portrait.jpg";
 
 export default () => {
