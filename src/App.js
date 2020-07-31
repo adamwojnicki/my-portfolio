@@ -13,8 +13,8 @@ export default () => {
       <Personal />
       <Skills />
       <Experiences />
-      <Projects />
       <Hobbies />
+      <Projects />
     </div>
   );
 };
