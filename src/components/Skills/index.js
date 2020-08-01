@@ -8,6 +8,8 @@ export default () => {
       <ul className="skills">
         <Skill name="HTML" skillLevel={80} />
         <Skill name="CSS" skillLevel={85} />
+        <Skill name="JS (ES6)" skillLevel={79} />
+        <Skill name="React" skillLevel={65} />
       </ul>
     </section>
   );
