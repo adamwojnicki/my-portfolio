@@ -1,0 +1,14 @@
+.experiences {
+  &__item {
+    display: flex;
+  }
+  &__companyLogo {
+    width: 25%;
+    max-width: 125px;
+    img {
+      width: 100%;
+    }
+  }
+  &__textContent {
+  }
+}
