@@ -13,9 +13,9 @@ export default () => {
         <li className={styles.tags__item}>#responsive</li>
       </ul>
       {/* HEADLINE */}
-      <h3>Edie landing page</h3>
+      <h3 className={styles.item__headline}>Edie landing page</h3>
       {/* DESCRIPTION */}
-      <p>
+      <p className={styles.item__description}>
         Page made with raw HTML and CSS. No libraries, frameworks, preprocessors
         were used in this project
       </p>
