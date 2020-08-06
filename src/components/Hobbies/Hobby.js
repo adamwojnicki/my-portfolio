@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./Hobby.module.scss";
 
-export default () => {
+export default ({ img, name, desc }) => {
   return (
-    <li>
+    <li className={styles.item}>
       <figure className={styles.item__img}>
-        <img src="" alt="" />
+        <img src={img} alt="Hobby img" />
       </figure>
-      <h3 className={styles.item__headline}>Traveling</h3>
+      <h3 className={styles.item__headline}>{name}</h3>
+      <p className={styles.item__description}>{desc}</p>
     </li>
   );
 };
