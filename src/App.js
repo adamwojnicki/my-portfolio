@@ -10,11 +10,19 @@ import Hobbies from "./components/Hobbies";
 export default () => {
   return (
     <div className="container">
-      <Personal />
-      <Skills />
-      <Experiences />
-      <Hobbies />
-      <Projects />
+      <header>
+        <Personal />
+      </header>
+      <main>
+        <div className="column-left">
+          <Skills />
+          <Hobbies />
+        </div>
+        <div className="column-right">
+          <Experiences />
+          <Projects />
+        </div>
+      </main>
     </div>
   );
 };
