@@ -20,6 +20,8 @@ export default () => {
       <a
         className={styles.item__ctaPrimary}
         href="https://keen-lichterman-5dd3d9.netlify.app/"
+        target="_blank"
+        rel="noreferrer noopener"
       >
         Live demo
       </a>
@@ -27,6 +29,8 @@ export default () => {
       <a
         className={styles.item__cta}
         href="https://github.com/adamwojnicki/eddie-page"
+        target="_blank"
+        rel="noreferrer noopener"
       >
         Code
       </a>
