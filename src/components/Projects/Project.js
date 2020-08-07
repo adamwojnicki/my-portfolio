@@ -12,18 +12,26 @@ export default () => {
         <li className={styles.tags__item}>#frontend</li>
         <li className={styles.tags__item}>#responsive</li>
       </ul>
-      {/* HEADLINE */}
       <h3 className={styles.item__headline}>Edie landing page</h3>
-      {/* DESCRIPTION */}
       <p className={styles.item__description}>
         Page made with raw HTML and CSS. No libraries, frameworks, preprocessors
         were used in this project
       </p>
       {/* CTAS */}
       {/* eslint-disable-next-line */}
-      <a href="#">Live demo</a>
+      <a
+        className={styles.item__ctaPrimary}
+        href="https://keen-lichterman-5dd3d9.netlify.app/"
+      >
+        Live demo
+      </a>
       {/* eslint-disable-next-line */}
-      <a href="#">Code</a>
+      <a
+        className={styles.item__cta}
+        href="https://github.com/adamwojnicki/eddie-page"
+      >
+        Code
+      </a>
     </li>
   );
 };

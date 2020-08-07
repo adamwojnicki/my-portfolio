@@ -18,6 +18,24 @@
     margin-bottom: 3.2rem;
     color: $light-grey1;
   }
+  &__cta {
+    font-size: 1.6rem;
+    padding: 12px 40px;
+    border: 1px solid $orange;
+    color: $orange;
+    margin-right: 24px;
+    border-radius: 12px;
+    &Primary {
+      font-size: 1.6rem;
+      padding: 12px 40px;
+      border: 1px solid $orange;
+      color: $orange;
+      margin-right: 24px;
+      border-radius: 12px;
+      background: $orange;
+      color: #fff;
+    }
+  }
 }
 .tags {
   display: flex;
