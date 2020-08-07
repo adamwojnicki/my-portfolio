@@ -17,12 +17,21 @@ export default () => {
         Page made with raw HTML and CSS. No libraries, frameworks, preprocessors
         were used in this project
       </p>
+<<<<<<< HEAD
+=======
+      {/* CTAS */}
+      {/* eslint-disable-next-line */}
+>>>>>>> ff0fa8825d0219e27aad20b91161f08c56cb9fe5
       <a
         className={styles.item__ctaPrimary}
         href="https://keen-lichterman-5dd3d9.netlify.app/"
       >
         Live demo
       </a>
+<<<<<<< HEAD
+=======
+      {/* eslint-disable-next-line */}
+>>>>>>> ff0fa8825d0219e27aad20b91161f08c56cb9fe5
       <a
         className={styles.item__cta}
         href="https://github.com/adamwojnicki/eddie-page"
