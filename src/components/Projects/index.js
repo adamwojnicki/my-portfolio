@@ -7,6 +7,7 @@ export default () => {
       <h2 className="content-section__headline">Projects</h2>
       <ul>
         <Project />
+        <Project />
       </ul>
     </section>
   );
