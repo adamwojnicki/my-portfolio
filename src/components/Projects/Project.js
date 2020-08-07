@@ -23,6 +23,7 @@ export default () => {
       >
         Live demo
       </a>
+
       <a
         className={styles.item__cta}
         href="https://github.com/adamwojnicki/eddie-page"
