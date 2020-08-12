@@ -2,7 +2,7 @@ import React from "react";
 import edieImg from "../../images/projects/edie-page.png";
 import styles from "./Project.module.scss";
 
-export default () => {
+export default ({ title }) => {
   return (
     <li className={styles.item}>
       <figure className={styles.item__img}>
@@ -12,7 +12,7 @@ export default () => {
         <li className={styles.tags__item}>#frontend</li>
         <li className={styles.tags__item}>#responsive</li>
       </ul>
-      <h3 className={styles.item__headline}>Edie landing page</h3>
+      <h3 className={styles.item__headline}>{title}</h3>
       <p className={styles.item__description}>
         Page made with raw HTML and CSS. No libraries, frameworks, preprocessors
         were used in this project
