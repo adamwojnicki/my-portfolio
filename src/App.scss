@@ -48,6 +48,24 @@ a {
   }
 }
 
+@media (max-width: 920px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    main {
+      flex-direction: column;
+      .column-left,
+      .column-right {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .content-section {
   background: #ffffff;
   padding: 22px;

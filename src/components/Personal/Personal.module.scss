@@ -19,3 +19,16 @@
     margin-bottom: 12px;
   }
 }
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    &__img {
+      margin: 32px auto;
+      width: initial;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+}

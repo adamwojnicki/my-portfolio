@@ -39,11 +39,31 @@
     }
   }
 }
+
+@media (max-width: 420px) {
+  .item {
+    &__cta {
+      width: 50%;
+      margin: 8px auto;
+      text-align: center;
+      display: table;
+      &Primary {
+        width: 50%;
+        margin: 8px auto;
+        text-align: center;
+        display: table;
+      }
+    }
+  }
+}
+
 .tags {
   display: flex;
   margin-bottom: 1.8rem;
+  flex-wrap: wrap;
   &__item {
     margin-right: 1.6rem;
+    margin-bottom: 9px;
     color: $dark-grey2;
     font-size: 1.6rem;
   }

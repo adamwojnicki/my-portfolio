@@ -26,3 +26,13 @@
     color: $light-grey1;
   }
 }
+
+@media (max-width: 768px) {
+  .experiences {
+    &__companyLogo {
+      img {
+        width: 55px;
+      }
+    }
+  }
+}
