@@ -1,65 +1,81 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Project from "./Project";
 import edieImg from "../../images/projects/edie-page.png";
 import recipeImg from "../../images/projects/recipe-page.png";
 import styles from "./Project.module.scss";
 import Tag from "./Tag";
 
+const initialProjects = [
+  {
+    id: 1,
+    img: edieImg,
+    tags: ["all", "#landing", "#responsive"],
+    title: "Edie landing page",
+    desc:
+      "Page made with raw HTML and CSS. No libraries, frameworks, preprocessors were used in this project",
+    liveUrl: "https://keen-lichterman-5dd3d9.netlify.app/",
+    codeUrl: "https://github.com/adamwojnicki/eddie-page/",
+  },
+  {
+    id: 2,
+    img: recipeImg,
+    tags: ["all", "#blog", "#responsive", "#interactive"],
+    title: "Recipe Page",
+    desc:
+      "Page made with raw HTML and CSS. No libraries, frameworks, preprocessors were used in this project",
+    liveUrl: "https://cocky-ptolemy-bb6d46.netlify.app/",
+    codeUrl: "https://github.com/adamwojnicki/recipe-page",
+  },
+];
+
+const tags = ["all", "#landing", "#responsive", "#blog", "#interactive"];
+
 export default () => {
-  const initialProjects = [
-    {
-      id: 1,
-      img: edieImg,
-      tags: ["#landing", "#responsive"],
-      title: "Edie landing page",
-      desc:
-        "Page made with raw HTML and CSS. No libraries, frameworks, preprocessors were used in this project",
-      liveUrl: "https://keen-lichterman-5dd3d9.netlify.app/",
-      codeUrl: "https://github.com/adamwojnicki/eddie-page/",
-    },
-    {
-      id: 2,
-      img: recipeImg,
-      tags: ["#blog", "#responsive", "#interactive"],
-      title: "Recipe Page",
-      desc:
-        "Page made with raw HTML and CSS. No libraries, frameworks, preprocessors were used in this project",
-      liveUrl: "https://cocky-ptolemy-bb6d46.netlify.app/",
-      codeUrl: "https://github.com/adamwojnicki/recipe-page",
-    },
-  ];
+  const [projects, setProjects] = useState([]);
+  const [filter, setFilter] = useState("all");
 
-  const [projects, setProjects] = useState(initialProjects);
+  useEffect(() => {
+    setProjects(initialProjects);
+  }, []);
 
-  const tags = ["#landing", "#responsive", "#blog", "#interactive"];
+  useEffect(() => {
+    setProjects([]);
+    const filtered = initialProjects.map((p) => ({
+      ...p,
+      filtered: p.tags.includes(filter),
+    }));
+    setProjects(filtered);
+  }, [filter]);
 
-  const handleFilter = () => {
-    console.log("dupa");
+  const handleFilter = (tag) => {
+    setFilter(tag);
   };
 
   const tagElements = tags.map((tag) => (
     <Tag tag={tag} handleFilter={() => handleFilter(tag)} />
   ));
 
-  const projectElements = projects.map((project) => (
-    <Project
-      key={project.id}
-      tags={project.tags}
-      img={project.img}
-      title={project.title}
-      desc={project.desc}
-      live={project.liveUrl}
-      code={project.codeUrl}
-    />
-  ));
-
-  // useEffect(() => setProjects(initialProjects));
-
   return (
     <section className="content-section" id="projects">
       <h2 className="content-section__headline">Projects</h2>
       <ul className={styles.tags}>{tagElements}</ul>
-      <ul>{projectElements}</ul>
+      <ul>
+        {projects.map((item) =>
+          item.filtered === true ? (
+            <Project
+              key={item.id}
+              tags={item.tags}
+              img={item.img}
+              title={item.title}
+              desc={item.desc}
+              live={item.liveUrl}
+              code={item.codeUrl}
+            />
+          ) : (
+            ""
+          )
+        )}
+      </ul>
     </section>
   );
 };
