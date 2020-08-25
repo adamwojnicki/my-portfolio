@@ -10,7 +10,7 @@ const experiences = [
     time: "Sep 2019 - current",
     position: "Junior front-end web developer",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit consequatur natus eaque, commodi temporibus error vero suscipit quis in optio? Ea itaque neque aperiam similique unde dolor, obcaecati dignissimos minima!",
+      "Creating and modifying websites using HTML, CSS and JS (jQuery). Clear cooperation with Content Managers and QA. Making pages readable on mobile devices (RWD).",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const experiences = [
     time: "Oct 2018 - Sep 2019",
     position: "Web publisher",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit consequatur natus eaque, commodi temporibus error vero suscipit quis in optio? Ea itaque neque aperiam similique unde dolor, obcaecati dignissimos minima!",
+      "Creating and modifying websites using Adobe Experience Manager CMS. SEO optimisation. Making minor changes in HTML, CSS and JS code. Minor image modifications with Photoshop. ",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const experiences = [
     time: "Feb 2014 - Oct 2018",
     position: "IT Helpdesk technician",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit consequatur natus eaque, commodi temporibus error vero suscipit quis in optio? Ea itaque neque aperiam similique unde dolor, obcaecati dignissimos minima!",
+      "Solving computer related problems both hardware and software. Receiving and processing service requests in OTRS system.",
   },
 ];
 
