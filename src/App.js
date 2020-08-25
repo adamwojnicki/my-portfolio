@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";
 import Hobbies from "./components/Hobbies";
+import Footer from "./components/Footer";
 
 export default () => {
   return (
@@ -23,6 +24,7 @@ export default () => {
           <Projects />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
