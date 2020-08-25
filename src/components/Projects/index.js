@@ -6,7 +6,7 @@ import styles from "./Project.module.scss";
 import Tag from "./Tag";
 
 export default () => {
-  const [projects, setProjects] = useState([
+  const initialProjects = [
     {
       id: 1,
       img: edieImg,
@@ -27,9 +27,15 @@ export default () => {
       liveUrl: "https://cocky-ptolemy-bb6d46.netlify.app/",
       codeUrl: "https://github.com/adamwojnicki/recipe-page",
     },
-  ]);
+  ];
+
+  const [projects, setProjects] = useState(initialProjects);
 
   const tags = ["#landing", "#responsive", "#blog", "#interactive"];
+
+  const handleFilter = () => {
+    console.log("dupa");
+  };
 
   const tagElements = tags.map((tag) => (
     <Tag tag={tag} handleFilter={() => handleFilter(tag)} />
@@ -47,9 +53,7 @@ export default () => {
     />
   ));
 
-  const handleFilter = (tag) => {
-    setProjects(projects.filter((project) => project.tags.includes(tag)));
-  };
+  // useEffect(() => setProjects(initialProjects));
 
   return (
     <section className="content-section" id="projects">
