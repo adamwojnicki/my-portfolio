@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./Project.module.scss";
 
 export default ({ img, tags, title, desc, live, code }) => {
-  const renderTags = tags.map((tag) => (
-    <li className={styles.tags__item}>{tag}</li>
+  const renderTags = tags.map((tag, idx) => (
+    <li key={idx} className={styles.tags__item}>
+      {tag}
+    </li>
   ));
   return (
     <li className={styles.item}>

@@ -51,8 +51,8 @@ export default () => {
     setFilter(tag);
   };
 
-  const tagElements = tags.map((tag) => (
-    <Tag tag={tag} handleFilter={() => handleFilter(tag)} />
+  const tagElements = tags.map((tag, idx) => (
+    <Tag key={idx} tag={tag} handleFilter={() => handleFilter(tag)} />
   ));
 
   return (

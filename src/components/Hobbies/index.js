@@ -25,7 +25,7 @@ const hobbies = [
   },
 ];
 const hobbyItems = hobbies.map((hobby) => (
-  <Hobby img={hobby.img} name={hobby.name} desc={hobby.desc} />
+  <Hobby key={hobby.id} img={hobby.img} name={hobby.name} desc={hobby.desc} />
 ));
 export default () => {
   return (

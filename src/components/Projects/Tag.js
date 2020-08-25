@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Project.module.scss";
 
-export default ({ tag, handleFilter }) => {
+export default ({ tag, handleFilter, idx }) => {
   return (
-    <li className={styles.tags__item}>
+    <li key={idx} className={styles.tags__item}>
       <button onClick={() => handleFilter(tag)}>{tag}</button>
     </li>
   );
