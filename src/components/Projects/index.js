@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import edieImg from "../../images/projects/edie-page.png";
+import recipeImg from "../../images/projects/recipe-page.png";
 
 const projects = [
   {
@@ -12,6 +13,16 @@ const projects = [
       "Page made with raw HTML and CSS. No libraries, frameworks, preprocessors were used in this project",
     liveUrl: "https://keen-lichterman-5dd3d9.netlify.app/",
     codeUrl: "https://github.com/adamwojnicki/eddie-page/",
+  },
+  {
+    id: 2,
+    img: recipeImg,
+    tags: ["#blog", "#responsive", "#interactive"],
+    title: "Recipe Page",
+    desc:
+      "Page made with raw HTML and CSS. No libraries, frameworks, preprocessors were used in this project",
+    liveUrl: "https://cocky-ptolemy-bb6d46.netlify.app/",
+    codeUrl: "https://github.com/adamwojnicki/recipe-page",
   },
 ];
 
